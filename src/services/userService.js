@@ -109,7 +109,7 @@ let getAllUsers = (userId) => {
 let createNewUser = (data) => {
     return new Promise(async (resolve, reject) => {
         try {
-            // check email is exist ??
+            // check email is exist ?
             let check = await checkUserEmail(data.email);
             if(check === true) {
                 resolve({
